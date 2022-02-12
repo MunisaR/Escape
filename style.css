@@ -90,21 +90,42 @@ header {
 }
 
 button {
-  background-color: var(--button);
-  color: var(--text);
   height: 44px;
   border-radius: 5px;
   width: 167px;
-  border-color: var(--button);
-}
-
-button:hover {
   background-color: transparent;
   border-color: var(--button);
   color: var(--text);
   cursor: pointer;
   transform: scale(1.2);
+  transition: 0.4s all ease-in-out 0s;
+
 }
+  .view:hover{
+    color:var(--black2);
+    border-color: var(--button);
+    /* transform: none; */
+    
+  }
+  .view::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: unset;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--button);
+    transition: 0.4s all ease-in-out 0s;
+  }
+  
+  .view:hover::before{
+    right: unset;
+    left: 0;
+    width: 100%;
+  }
+
 
 .container {
   display: flex;
@@ -365,19 +386,73 @@ footer input {
 }
 
 footer .submit {
-  height: 50px;
+  height: 43px;
   left: 75%;
   right: 0%;
   top: 0px;
-  width: 125px;
+  width: 120px;
   background: rgba(255, 255, 255, 0.28);
-  margin-left: -.2rem;
+  margin-left: .5rem;
   border-radius: 3px;
   border-color: rgba(255, 255, 255, 0.28);
+  transition: 0.4s all ease-in-out 0s;
+
 }
+
+.submit:hover{
+  color:var(--footerText);
+  border-color: var(--black);
+  /* transform: none; */
+  
+}
+.submit::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  z-index: -1;
+  background-color: var(--black);
+  transition: 0.4s all ease-in-out 0s;
+}
+
+.submit:hover::before{
+  top: unset;
+  bottom: 0;
+  height: 100%;
+}
+
 
 footer .head {
   background-color: rgba(35, 47, 56, 0.6);
   margin-top: 4.1rem;
   height: 89px;
+}
+
+footer h2 {
+  padding-top: 1.8rem;
+  margin-left: 10rem;
+  font-size: 26px;
+  line-height: 26px;
+  color: var(--footerText);
+}
+
+footer nav {
+  display: flex;
+  justify-content: right;
+}
+
+footer a {
+  font-size: 11px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: -10rem;
+  margin-top: -1.5rem;
+  color: var(--footerText);
+  padding-right: 12rem;
+
 }
