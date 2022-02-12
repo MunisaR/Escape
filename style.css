@@ -329,10 +329,13 @@ button {
 }
 
 .recent:hover {
-  background-color: var(--black2);
+  background-color: var(--black);
   color: var(--text);
   transform: scale(1.2);
   cursor: pointer;
+}
+.recent:hover p {
+  color: var(--text);
 }
 
 .recent:hover h3 {
@@ -437,6 +440,10 @@ footer h2 {
   line-height: 26px;
   color: var(--footerText);
 }
+footer h2:hover{
+  color: var(--button);
+  cursor: pointer;
+}
 
 footer nav {
   display: flex;
@@ -455,4 +462,8 @@ footer a {
   color: var(--footerText);
   padding-right: 12rem;
 
+}
+footer a:hover{
+  color: var(--button);
+  cursor: pointer;
 }
