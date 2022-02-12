@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dongle&family=Lora&family=Open+Sans:wght@300&family=Zen+Kaku+Gothic+Antique:wght@500&display=swap");
+
 :root {
   --text: #ffffff;
   --smallertext: rgba(255, 255, 255, 0.7);
@@ -9,6 +10,7 @@
   --footerText: #efefef;
   --button: #dd783f;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -21,15 +23,14 @@ header {
   padding-left: 0%;
   padding-right: 0%;
   padding-top: 0px;
-  background-image: linear-gradient(
-      0deg,
+  background-image: linear-gradient(0deg,
       rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
+      rgba(0, 0, 0, 0.5)),
     url(/images/header.svg);
   border-radius: 0px;
   color: var(--text);
 }
+
 .content {
   display: flex;
   /* justify-content: center; */
@@ -41,9 +42,12 @@ header {
   font-size: 30px;
   line-height: 26px;
 }
-.logo:hover{
 
+.logo:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
+
 .navbar {
   padding-top: 0.5rem;
   margin-left: 43rem;
@@ -60,38 +64,96 @@ header {
   margin-right: 1rem;
   padding-top: 0;
 }
+
+.navbar a:hover {
+  color: var(--button);
+}
+
 .content2 {
   text-align: center;
+
   padding-top: 5rem;
 }
+
 .content2 h1 {
   font-size: 50px;
   line-height: 51px;
   letter-spacing: 3px;
   padding-bottom: 1.5rem;
 }
+
 .content2 p {
   font-size: 17px;
   line-height: 20px;
   padding-bottom: 2rem;
   color: var(--smallertext);
 }
-button{
-    background-color: var(--button);
-    color: var(--text);
-    height: 44px;
-    border-radius: 5px;
-    width: 167px;
-    border-color: var(--button);
-}
-button:hover{
-    background-color: transparent;
-    border-color: var(--button);
-    color: var(--text);
-    cursor: pointer;
-    transform: scale(1.2);
+
+button {
+  background-color: var(--button);
+  color: var(--text);
+  height: 44px;
+  border-radius: 5px;
+  width: 167px;
+  border-color: var(--button);
 }
 
+button:hover {
+  background-color: transparent;
+  border-color: var(--button);
+  color: var(--text);
+  cursor: pointer;
+  transform: scale(1.2);
+}
 
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 
+.container h3 {
+  margin-left: 8rem;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gray);
+}
 
+.post-section {
+  height: 1255px;
+  left: 0%;
+  right: 0%;
+  top: 0px;
+  background: #F7F7F7;
+  padding-top: 2rem;
+}
+
+.post-section h1 {
+  text-align: center;
+}
+
+.posts-container {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  justify-content: center;
+  height: 280px;
+  left: 0%;
+  right: 0%;
+  top: 0px;
+  border-radius: 3px;
+
+}
+
+.post1 {
+  margin-left: 2rem;
+  background-image: url(/images/post1.svg);
+  text-align: left;  
+}
+.post1 h{}
+
+.post2 {
+  margin-left: 5rem;
+  background-image: url(/images/post2.svg);
+}
