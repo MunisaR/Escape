@@ -120,8 +120,13 @@ button:hover {
   color: var(--gray);
 }
 
+.container h3:hover {
+  color: var(--button);
+  cursor: pointer;
+}
+
 .post-section {
-  height: 1255px;
+  height: 1300px;
   left: 0%;
   right: 0%;
   top: 0px;
@@ -131,6 +136,15 @@ button:hover {
 
 .post-section h1 {
   text-align: center;
+}
+
+.post-section hr {
+  margin-top: 2rem;
+  margin-left: 36rem;
+  margin-right: 35.5rem;
+  background: #DEDEDE;
+  height: 1px;
+
 }
 
 .posts-container {
@@ -144,16 +158,148 @@ button:hover {
   top: 0px;
   border-radius: 3px;
 
+
 }
 
 .post1 {
   margin-left: 2rem;
   background-image: url(/images/post1.svg);
-  text-align: left;  
+  text-align: left;
+  height: 280px;
+  width: 460px;
+  left: 0px;
+  top: 0px;
+  border-radius: 3px;
+
+
 }
-.post1 h{}
+
+.posts-container h3 {
+  padding-top: 10rem;
+  padding-bottom: .5rem;
+  padding-left: 1.5rem;
+  font-size: 27px;
+  line-height: 30px;
+  color: var(--text);
+}
+
+.posts-container p {
+  font-size: 14px;
+  line-height: 25px;
+  padding-left: 1.5rem;
+  color: var(--smallertext);
+
+}
+
+.posts-container img {
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+}
+
+.name {
+  margin-top: -2rem;
+  margin-left: 2rem;
+}
 
 .post2 {
   margin-left: 5rem;
   background-image: url(/images/post2.svg);
+  height: 280px;
+  height: 280px;
+  width: 460px;
+  left: 0px;
+  top: 0px;
+  border-radius: 3px;
 }
+
+.time {
+  padding-top: -5rem;
+  margin-top: -25px;
+}
+
+.time input {
+  margin-left: 20rem;
+  padding-top: -5rem;
+  width: 135px;
+  background-color: transparent;
+  color: var(--smallertext);
+  border-color: transparent;
+}
+
+.recent-container {
+  margin-top: 8rem;
+
+}
+
+.recent-posts1 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-left: 10rem;
+  padding-right: 50rem;
+  margin-right: 5rem;
+
+}
+
+.recent-posts2 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-left: 10rem;
+  padding-right: 50rem;
+  margin-right: 5rem;
+}
+
+
+.recent-container h3 {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-size: 16px;
+  line-height: 21px;
+  color: #101315;
+  ;
+}
+
+.recent-container p {
+  margin-top: .5rem;
+  margin-left: 1rem;
+  font-size: 13px;
+  line-height: 19px;
+  color: var(--gray2);
+}
+
+.recent {
+  width: 296px;
+  background-color: var(--text);
+  margin-left: 2rem;
+  height: 305px;
+}
+.line .nameImg{
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+}
+.line .name{
+  margin-top: -1.8rem;
+  margin-left: 4rem;
+}
+
+.line2 .nameImg{
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+.line2 .name{
+  margin-top: -1.8rem;
+  margin-left: 4rem;
+}
+.line input{
+  margin-top: .2rem;
+  margin-left: 13rem;
+  color: var(--gray2);
+}
+
+.line2 input{
+  margin-top: .2rem;
+  margin-left: 13rem;
+  color: var(--gray2);
+}
+
